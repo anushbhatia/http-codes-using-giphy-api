@@ -43,7 +43,7 @@ show403();
 
 function showGIF(searchTerm)
 {
-	var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=" + apiKey + "&limit=" + limit);
+	var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=" + apiKey + "&limit=" + limit);
 	xhr.done(function(data) { 
 		console.log("success got data", data);
 		var random = Math.floor((Math.random() * 9) + 0);
